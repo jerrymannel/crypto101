@@ -20,6 +20,8 @@ rm server.key
 rm server.pub.pem
 rm server_ca.crt
 rm server_ca_1.crt
+rm server_2048.key
+rm server_4096.key
 
 rm 0*
 

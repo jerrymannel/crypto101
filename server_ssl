@@ -5,7 +5,7 @@ server {
   root /usr/local/var/www/html;
   index index.html index.htm;
 
-  server_name odp.capiot.com;
+  server_name odp.capiot.com localhost;
   ssl_certificate /usr/local/etc/nginx/keys/server.crt;
   ssl_certificate_key /usr/local/etc/nginx/keys/server.key;
 
