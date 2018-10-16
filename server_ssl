@@ -1,0 +1,15 @@
+server {
+
+  listen 8443 ssl;
+
+  root /usr/local/var/www/html;
+  index index.html index.htm;
+
+  server_name odp.capiot.com;
+  ssl_certificate /usr/local/etc/nginx/keys/server.crt;
+  ssl_certificate_key /usr/local/etc/nginx/keys/server.key;
+
+  location / {
+    alias /usr/local/var/www/keys;
+  }
+}

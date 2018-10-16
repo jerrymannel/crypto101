@@ -23,5 +23,11 @@ rm server_ca_1.crt
 
 rm 0*
 
+sudo rm /usr/local/etc/nginx/servers/server_ssl 
+
+sudo rm /usr/local/etc/nginx/keys/*
+
+sudo nginx -s reload
+
 touch index.txt
 echo '01' > serial.txt
