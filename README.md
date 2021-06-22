@@ -58,6 +58,8 @@ openssl x509 -signkey ca.key -in ca.csr -req -days 365 -out ca.crt
 
 ```sh
 openssl ca -config openssl.cnf -policy signing_policy -extensions signing_req -out server_ca.crt -infiles server.csr
+OR
+openssl x509 -req -in server.csr -CA server_ca.crt -CAkey server_ca.key -CAcreateserial -out server.crt -days 500 -sha256
 ```
 
 ## Display information within CERT
